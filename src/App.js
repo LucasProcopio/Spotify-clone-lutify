@@ -2,11 +2,13 @@ import React from "react";
 
 import { GlobalStyle } from "./styles/global";
 
+import Sidebar from "./components/Sidebar";
+
 function App() {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <div>it works</div>
+      <Sidebar />
     </React.Fragment>
   );
 }
