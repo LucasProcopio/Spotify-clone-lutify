@@ -17,6 +17,11 @@ export const Container = styled.aside`
 
 export const Nav = styled.ul`
   list-style: none;
+  margin-top: 25px;
+
+  &:first-child {
+    margin: 0;
+  }
 
   li {
     a {
@@ -24,10 +29,19 @@ export const Nav = styled.ul`
       text-decoration: none;
       font-size: 13px;
       line-height: 32px;
+      font-weight: ${props => (props.main ? "bold" : "normal")};
 
       &:hover {
         color: #fff;
       }
+    }
+
+    span {
+      font-size: 11px;
+      text-transform: uppercase;
+      line-height: 22px;
+      letter-spacing: 1.1px;
+      font-weight: 300;
     }
   }
 `;
