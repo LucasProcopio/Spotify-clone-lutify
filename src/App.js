@@ -1,4 +1,5 @@
 import React from "react";
+import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
 import { GlobalStyle } from "./styles/global";
@@ -10,24 +11,27 @@ import Header from "./components/Header";
 import { Wrapper, Container, Content } from "./styles/components";
 
 import Routes from "./routes";
+import store from "./store";
 
 function App() {
   return (
-    <BrowserRouter>
-      <React.Fragment>
-        <GlobalStyle />
-        <Wrapper>
-          <Container>
-            <Sidebar />
-            <Content>
-              <Header />
-              <Routes />
-            </Content>
-          </Container>
-          <Player />
-        </Wrapper>
-      </React.Fragment>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <React.Fragment>
+          <GlobalStyle />
+          <Wrapper>
+            <Container>
+              <Sidebar />
+              <Content>
+                <Header />
+                <Routes />
+              </Content>
+            </Container>
+            <Player />
+          </Wrapper>
+        </React.Fragment>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
