@@ -13,6 +13,9 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  button {
+    cursor: pointer;
+  }
   body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
