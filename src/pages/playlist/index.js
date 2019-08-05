@@ -60,7 +60,6 @@ class Playlist extends React.Component {
 
   renderDetails = () => {
     const playlist = this.props.playlistDetail.data;
-    console.log(this.props.playlistDetail);
     return (
       <Container>
         <Header>
@@ -89,27 +88,27 @@ class Playlist extends React.Component {
                 <td colSpan={5}>No subscribed music</td>
               </tr>
             ) : (
-              playlist.songs.map(song => (
-                <SongItem
-                  key={song.id}
-                  onClick={() => this.setState({ selectedSong: song.id })}
-                  onDoubleClick={() => this.props.loadSong(song)}
-                  selected={this.state.selectedSong === song.id}
-                  playing={
-                    this.props.currentSong &&
-                    this.props.currentSong.id === song.id
-                  }
-                >
-                  <td>
-                    <img src={PlusIcon} alt="Add to playlist" />
-                  </td>
-                  <td>{song.title}</td>
-                  <td>{song.author}</td>
-                  <td>{song.album}</td>
-                  <td>3:26</td>
-                </SongItem>
-              ))
-            )}
+                playlist.songs.map(song => (
+                  <SongItem
+                    key={song.id}
+                    onClick={() => this.setState({ selectedSong: song.id })}
+                    onDoubleClick={() => this.props.loadSong(song, playlist.songs)}
+                    selected={this.state.selectedSong === song.id}
+                    playing={
+                      this.props.currentSong &&
+                      this.props.currentSong.id === song.id
+                    }
+                  >
+                    <td>
+                      <img src={PlusIcon} alt="Add to playlist" />
+                    </td>
+                    <td>{song.title}</td>
+                    <td>{song.author}</td>
+                    <td>{song.album}</td>
+                    <td>3:26</td>
+                  </SongItem>
+                ))
+              )}
           </tbody>
         </SongList>
       </Container>
@@ -122,8 +121,8 @@ class Playlist extends React.Component {
         <Loading />
       </Container>
     ) : (
-      this.renderDetails()
-    );
+        this.renderDetails()
+      );
   }
 }
 

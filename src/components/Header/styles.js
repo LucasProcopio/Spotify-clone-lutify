@@ -23,6 +23,7 @@ export const Search = styled.div`
     font-size: 13px;
     color: #121212;
     border: 0;
+    overflow: hidden;
   }
 `;
 
