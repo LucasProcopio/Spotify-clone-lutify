@@ -5,6 +5,7 @@ import { Spinner } from "../Loading/styles";
 export const Container = styled.aside`
   height: 100%;
   width: 200px;
+  min-width: 200px;
   background: #121212;
   color: #b3b3b3;
 
