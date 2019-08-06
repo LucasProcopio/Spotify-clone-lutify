@@ -39,7 +39,7 @@ class Sidebar extends React.Component {
               <Link to="/">Navigate</Link>
             </li>
             <li>
-              <a href="">Radio</a>
+              <a href="http://localhost:3000/">Radio</a>
             </li>
           </Nav>
 
@@ -48,31 +48,31 @@ class Sidebar extends React.Component {
               <span>YOUR LIBRARY</span>
             </li>
             <li>
-              <a href="">Your daily mix</a>
+              <a href="http://localhost:3000/">Your daily mix</a>
             </li>
             <li>
-              <a href="">Played recently</a>
+              <a href="http://localhost:3000/">Played recently</a>
             </li>
             <li>
-              <a href="">Musics</a>
+              <a href="http://localhost:3000/">Musics</a>
             </li>
             <li>
-              <a href="">Albums</a>
+              <a href="http://localhost:3000/">Albums</a>
             </li>
             <li>
-              <a href="">Artists</a>
+              <a href="http://localhost:3000/">Artists</a>
             </li>
             <li>
-              <a href="">Stations</a>
+              <a href="http://localhost:3000/">Stations</a>
             </li>
             <li>
-              <a href="">Local files</a>
+              <a href="http://localhost:3000/">Local files</a>
             </li>
             <li>
-              <a href="">Videos</a>
+              <a href="http://localhost:3000/">Videos</a>
             </li>
             <li>
-              <a href="">Podcasts</a>
+              <a href="http://localhost:3000/">Podcasts</a>
             </li>
           </Nav>
 
