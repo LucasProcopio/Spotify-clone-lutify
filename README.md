@@ -11,12 +11,6 @@
 
 ---
 
-## Live
-
-Click [Here]() to see it in colors :)
-
----
-
 ## Installation
 
 #### Here is a brief description to install the app in your machine
