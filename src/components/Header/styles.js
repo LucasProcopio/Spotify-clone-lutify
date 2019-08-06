@@ -4,6 +4,7 @@ import SearchIcon from "../../assets/images/search.svg";
 
 export const Container = styled.header`
   display: flex;
+  min-width: 968px;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0 0;
